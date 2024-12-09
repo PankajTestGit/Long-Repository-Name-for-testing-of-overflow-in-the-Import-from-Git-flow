@@ -14,19 +14,12 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: ShellScript
-                  name: ShellScript_1
-                  identifier: ShellScript_1
-                  spec:
-                    shell: Bash
-                    executionTarget: {}
-                    source:
-                      type: Inline
-                      spec:
-                        script: |-
-                          echo S1
-                          exit 0
-                    environmentVariables: []
-                    outputVariables: []
-                  timeout: <+input>
+                  name: S1
+                  identifier: S1
+                  template:
+                    templateRef: Display_full_branch_name
+                    versionLabel: V1
+                    templateInputs:
+                      type: ShellScript
+                      timeout: <+input>
         tags: {}
