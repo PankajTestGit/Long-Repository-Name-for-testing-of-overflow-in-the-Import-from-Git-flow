@@ -26,7 +26,7 @@ template:
                       source:
                         type: Inline
                         spec:
-                          script: echo S1
+                          script: echo S1 Edit
                       environmentVariables: []
                       outputVariables: []
                     timeout: <+input>
