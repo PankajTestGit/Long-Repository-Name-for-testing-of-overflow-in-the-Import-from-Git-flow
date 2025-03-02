@@ -1,0 +1,23 @@
+template:
+  name: "Display full branch name "
+  identifier: Display_full_branch_name
+  versionLabel: V1
+  type: Step
+  projectIdentifier: Pankaj
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: <+input>
+    type: ShellScript
+    spec:
+      shell: Bash
+      executionTarget: {}
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: |-
+            echo S1
+            exit 0
+      environmentVariables: []
+      outputVariables: []
